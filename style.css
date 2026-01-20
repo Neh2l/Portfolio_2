@@ -1,0 +1,160 @@
+:root {
+  --blue-light:#eff6ff; 
+  --blue-light-hover:#e7f2fe;
+  --blue-light-active:#cee3fd;
+
+  --blue-normal:#60a5fa;
+  --blue-normal-hover:#4d84c8;
+
+  --blue-dark:#487cbc;
+  --blue-dark-hover:#3a6396;
+  --blue-dark-active:#2b4a70;
+  --blue-darker:#223a58;
+
+  --blue-50:#e6e7e7;
+  --blue-100:#b2b3b5;
+  --blue-200:#8d8f92;
+  --blue-300:#5a5c60;
+  --blue-400:#393c41;
+  --blue-500:#080b11;
+  --blue-600:#070a0f;
+  --blue-700:#06080c;
+  --blue-800:#040609;
+  --blue-900:#030507;
+}
+
+/* ================= BASE ================= */
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: radial-gradient(circle at left, #0f172a, var(--blue-800));
+  color: var(--blue-light);
+  overflow-x: hidden;
+}
+
+/* ================= NAV ================= */
+
+header {
+  padding: 20px 60px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--blue-light);
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 28px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--blue-200);
+  font-size: 15px;
+}
+
+.nav-links a:hover {
+  color: var(--blue-light);
+}
+
+.nav-btn {
+  background: var(--blue-normal);
+}
+
+/* ================= HERO ================= */
+
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 80px;
+}
+
+.hero-content {
+  max-width: 600px;
+}
+
+.hero h1 {
+  font-size: 56px;
+  margin-bottom: -30px;
+}
+
+.hero h2 {
+  font-size: 52px;
+  /* margin-bottom: -25px; */
+}
+
+.hero h2 span {
+  color: #facc15; 
+}
+
+.hero p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--blue-200);
+  margin-bottom: 35px;
+}
+
+/* ================= BUTTON ================= */
+
+.btn {
+  background: var(--blue-normal);
+  color: white;
+  padding: 14px 28px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 600;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: var(--blue-normal-hover);
+}
+
+/* ================= IMAGE ================= */
+
+.hero-image img {
+  width: 500px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 900px) {
+  nav {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 80px 20px;
+  }
+
+  .hero-image img {
+    width: 260px;
+    margin-top: 40px;
+  }
+
+  .hero h1 {
+    font-size: 42px;
+  }
+
+  .hero h2 {
+    font-size: 36px;
+  }
+}
