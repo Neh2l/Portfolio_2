@@ -3,46 +3,302 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nehal</title>
+  <title>Nehal Reda</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="shortcut icon" href="imgs/logo.png" type="image/x-icon">
 </head>
 <body>
-
-  <header>
-    <nav>
-      <div class="logo">Nehal Reda</div>
-
-      <ul class="nav-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About Me</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Contact Us</a></li>
-      </ul>
-
-      <a href="#" class="btn nav-btn">Book A Meeting</a>
-    </nav>
+  <!-- Logo -->
+  <header class="logo">
+    <img src="imgs/logo.png" alt="Logo">
+    <span>Nehal Reda</span>
   </header>
 
-  <section class="hero">
-    <div class="hero-content">
-      <h1>Hi, I'm Nehal Reda</h1>
-      <h2>Front-End <span>Developer</span></h2>
+  <!-- Sidebar Navigation -->
+  <nav class="sidebar">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
-      <p>
-        Crafting pixel-perfect interfaces and seamless experiences that bring
-        your vision to life. Let's build something extraordinary together.
+  <!-- Center Content -->
+  <main class="center-content" id="home">
+    <img src="imgs/me.png" alt="Nehal Reda" class="profile-pic" />
+    <div class="scroll-indicator">
+  <div class="circle">
+    <svg class="arrow-down" width="24" height="24" viewBox="0 0 24 24" fill="none">
+      <path d="M12 5V19M5 12L12 19L19 12" stroke="#00ff88" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </div>
+</div>
+
+  </main>
+
+
+
+  <!-- Stats Section -->
+  <section class="stats">
+ <div class="content">
+       <div class="intro-statement">
+    <p>My Work Isn't Just About Design And Code—It's About Creating Experiences That Truly Matter.</p>
+      </div>
+  <div class="box">
+    <div class="stat-box"><span>+5</span> <br> YEARS OF EXPERIENCE</div>
+    <div class="stat-box"><span>+4</span> <br> SATISFIED CUSTOMERS</div>
+    <div class="stat-box"><span>+4</span> <br> SUCCESSFUL PROJECTS</div>
+  </div>
+ </div>
+  </section>
+
+  <!-- About Me Section -->
+  <section class="about-me" id="about">
+    <h2>ABOUT ME</h2>
+    <p>
+      I'm A Passionate Front-End Developer & UI/UX Designer With 5 Years Of Experience Creating Clean, <br> Intuitive Interfaces And Seamless Digital Experiences. I Love Turning Ideas Into Functional, <br> User-Friendly Products That People Enjoy Using.
+    </p>
+      <section class="technologies">
+    <h3>Technologies I Work With</h3>
+    <ul>
+      <li>HTML5</li>
+      <li>CSS3</li>
+      <li>JavaScript</li>
+      <li>React.js</li>
+      <li>Next.js</li>
+      <li>Tailwind CSS</li>
+    </ul>
+  </section>
+   <div class="cv-button">
+    <a href="https://drive.google.com/file/d/1ltoFp4ZZXWuEEWCmzzpxhYDU47ciNYce/view?usp=sharing" target="_blank" download>Download CV</a>
+  </div>
+  </section>
+  <!-- Certifications Section -->
+<!-- <section class="certifications">
+  <h3 class="cert-title">- Certifications</h3>
+  <div class="cert-flex">
+    <img src="imgs/cert1 (1).png" alt="Certificate 1" />
+    <img src="imgs/cert1 (2).png" alt="Certificate 2" />
+    <img src="imgs/cert3.png" alt="Certificate 3" />
+    <img src="imgs/cert4.png" alt="Certificate 4" />
+  </div>
+</section> -->
+<section class="services" id="services">
+  <h2 class="services-title">- Services</h2>
+  <div class="services-grid">
+    <div class="service-card">
+      <div class="icon">
+        <svg width="40" height="40" fill="currentColor" viewBox="0 0 24 24"><path d="M4 4h16v2H4zm0 14h16v2H4zm0-7h16v2H4z"/></svg>
+      </div>
+      <h3>Front-End Web Development</h3>
+      <p>I build modern, responsive, and interactive websites with seamless user experiences from pixel-perfect layouts to dynamic functionality. I turn designs into working web applications.</p>
+    </div>
+    <div class="service-card">
+      <div class="icon">
+        <svg width="40" height="40" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l4 4h-3v6h-2V6H8z"/><path d="M4 12h16v10H4z"/></svg>
+      </div>
+      <h3>UI/UX Design</h3>
+      <p>I design clean, intuitive interfaces that enhance user engagement and ensure smooth digital experiences across devices.</p>
+    </div>
+    <div class="service-card">
+      <div class="icon">
+        <svg width="40" height="40" fill="currentColor" viewBox="0 0 24 24"><path d="M3 3h18v2H3zm0 16h18v2H3zm0-8h18v2H3z"/></svg>
+      </div>
+      <h3>Responsive Layouts</h3>
+      <p>I create layouts that adapt perfectly to all screen sizes, ensuring usability and visual consistency everywhere.</p>
+    </div>
+    <div class="service-card">
+      <div class="icon">
+        <svg width="40" height="40" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 14h-2v-2h2zm0-4h-2V7h2z"/></svg>
+      </div>
+      <h3>Performance Optimization</h3>
+      <p>I optimize websites for speed and efficiency, improving load times and delivering smooth user interactions.</p>
+    </div>
+    <div class="service-card">
+      <div class="icon">
+        <svg width="40" height="40" fill="currentColor" viewBox="0 0 24 24"><path d="M5 3h14v2H5zm0 16h14v2H5zm0-8h14v2H5z"/></svg>
+      </div>
+      <h3>Cross-Browser Compatibility</h3>
+      <p>I ensure your website works flawlessly across all major browsers, maintaining consistent design and behavior.</p>
+    </div>
+    <div class="service-card">
+      <div class="icon">
+        <svg width="40" height="40" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l4 4h-3v6h-2V6H8z"/><path d="M4 12h16v10H4z"/></svg>
+      </div>
+      <h3>Interactive Features</h3>
+      <p>I implement dynamic elements like sliders, modals, and animations to enhance user engagement and experience.</p>
+    </div>
+  </div>
+</section>
+<section class="projects" id="projects">
+  <h2 class="projects-title">- Projects</h2>
+  <div class="projects-grid">
+    <div class="project-card">
+      <img src="imgs/p1 (1).png" alt="Project 1" />
+      <div class="project-info">
+        <h3>Landing-page</h3>
+        <p class="date">Nov 2025
+</p>
+        <p class="desc">A modern, responsive landing page showcasing clean design and smooth user interactions.  
+Built with HTML, CSS, and JavaScript to highlight performance, accessibility, and professional aesthetics.
+</p>
+      </div>
+    <div class="project-overlay">
+  <a href="https://landing-page-amber-ten-23.vercel.app/" target="_blank" class="btn demo">
+    <svg class="btn-icon" width="20" height="20" viewBox="0 0 24 24" fill="none">
+      <path d="M16 11C17.7 11 19 9.7 19 8C19 6.3 17.7 5 16 5C14.3 5 13 6.3 13 8C13 9.7 14.3 11 16 11ZM8 11C9.7 11 11 9.7 11 8C11 6.3 9.7 5 8 5C6.3 5 5 6.3 5 8C5 9.7 6.3 11 8 11ZM8 13C5.3 13 2 14.3 2 17V19H14V17C14 14.3 10.7 13 8 13ZM16 13C15.7 13 15.3 13 15 13.1C16.2 14 17 15.4 17 17V19H22V17C22 14.3 18.7 13 16 13Z" fill="#000"/>
+    </svg>
+    Live Demo
+  </a>
+<a href="https://github.com/Neh2l/Landing-page" target="_blank" class="btn code">
+  <svg class="btn-icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+    <path d="M12 0.5C5.4 0.5 0 6 0 12.5C0 17.8 3.4 22.3 8.2 23.8C8.8 23.9 9 23.5 9 23.2V21.1C5.7 21.8 5 19.6 5 19.6C4.5 18.3 3.7 18 3.7 18C2.6 17.3 3.8 17.3 3.8 17.3C5 17.4 5.6 18.6 5.6 18.6C6.7 20.4 8.5 19.9 9.2 19.6C9.3 18.8 9.6 18.3 9.9 18C7.2 17.7 4.4 16.6 4.4 11.9C4.4 10.6 4.9 9.5 5.7 8.6C5.6 8.3 5.2 7 5.8 5.3C5.8 5.3 6.8 5 9 6.6C9.9 6.3 10.9 6.2 12 6.2C13.1 6.2 14.1 6.3 15 6.6C17.2 5 18.2 5.3 18.2 5.3C18.8 7 18.4 8.3 18.3 8.6C19.1 9.5 19.6 10.6 19.6 11.9C19.6 16.6 16.8 17.7 14.1 18C14.5 18.4 14.9 19.2 14.9 20.4V23.2C14.9 23.5 15.1 23.9 15.7 23.8C20.6 22.3 24 17.8 24 12.5C24 6 18.6 0.5 12 0.5Z"/>
+  </svg>
+  Code
+</a>
+
+</div>
+
+    </div>
+
+    <div class="project-card">
+      <img src="imgs/p1 (2).png" alt="Project 2" />
+      <div class="project-info">
+        <h3>Iclinic</h3>
+        <p class="date">june 2025</p>
+        <p class="desc">A medical appointment booking platform built with React and Node.js as part of our graduation project.  
+Developed with my team under Digital Egypt Pioneers, it streamlines doctor scheduling and patient access.
+</p>
+      </div>
+    <div class="project-overlay">
+  <a href="https://i-clinic-omega.vercel.app/" target="_blank" class="btn demo">
+    <svg class="btn-icon" width="20" height="20" viewBox="0 0 24 24" fill="none">
+      <path d="M16 11C17.7 11 19 9.7 19 8C19 6.3 17.7 5 16 5C14.3 5 13 6.3 13 8C13 9.7 14.3 11 16 11ZM8 11C9.7 11 11 9.7 11 8C11 6.3 9.7 5 8 5C6.3 5 5 6.3 5 8C5 9.7 6.3 11 8 11ZM8 13C5.3 13 2 14.3 2 17V19H14V17C14 14.3 10.7 13 8 13ZM16 13C15.7 13 15.3 13 15 13.1C16.2 14 17 15.4 17 17V19H22V17C22 14.3 18.7 13 16 13Z" fill="#000"/>
+    </svg>
+    Live Demo
+  </a>
+<a href="https://github.com/Neh2l/iClinic" target="_blank" class="btn code">
+  <svg class="btn-icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+    <path d="M12 0.5C5.4 0.5 0 6 0 12.5C0 17.8 3.4 22.3 8.2 23.8C8.8 23.9 9 23.5 9 23.2V21.1C5.7 21.8 5 19.6 5 19.6C4.5 18.3 3.7 18 3.7 18C2.6 17.3 3.8 17.3 3.8 17.3C5 17.4 5.6 18.6 5.6 18.6C6.7 20.4 8.5 19.9 9.2 19.6C9.3 18.8 9.6 18.3 9.9 18C7.2 17.7 4.4 16.6 4.4 11.9C4.4 10.6 4.9 9.5 5.7 8.6C5.6 8.3 5.2 7 5.8 5.3C5.8 5.3 6.8 5 9 6.6C9.9 6.3 10.9 6.2 12 6.2C13.1 6.2 14.1 6.3 15 6.6C17.2 5 18.2 5.3 18.2 5.3C18.8 7 18.4 8.3 18.3 8.6C19.1 9.5 19.6 10.6 19.6 11.9C19.6 16.6 16.8 17.7 14.1 18C14.5 18.4 14.9 19.2 14.9 20.4V23.2C14.9 23.5 15.1 23.9 15.7 23.8C20.6 22.3 24 17.8 24 12.5C24 6 18.6 0.5 12 0.5Z"/>
+  </svg>
+  Code
+</a>
+
+</div>
+
+    </div>
+
+    <div class="project-card">
+      <img src="imgs/p1 (3).png" alt="Project 3" />
+      <div class="project-info">
+        <h3>
+Trainiac</h3>
+        <p class="date">Jan 2025</p>
+        <p class="desc">A responsive gym landing page built with HTML and CSS, featuring a clean and modern design.  
+It highlights fitness services with engaging layouts and user‑friendly structure for better accessibility.
+</p>
+      </div>
+      <div class="project-overlay">
+  <a href="https://neh2l.github.io/Trainiac/" target="_blank" class="btn demo">
+    <svg class="btn-icon" width="20" height="20" viewBox="0 0 24 24" fill="none">
+      <path d="M16 11C17.7 11 19 9.7 19 8C19 6.3 17.7 5 16 5C14.3 5 13 6.3 13 8C13 9.7 14.3 11 16 11ZM8 11C9.7 11 11 9.7 11 8C11 6.3 9.7 5 8 5C6.3 5 5 6.3 5 8C5 9.7 6.3 11 8 11ZM8 13C5.3 13 2 14.3 2 17V19H14V17C14 14.3 10.7 13 8 13ZM16 13C15.7 13 15.3 13 15 13.1C16.2 14 17 15.4 17 17V19H22V17C22 14.3 18.7 13 16 13Z" fill="#000"/>
+    </svg>
+    Live Demo
+  </a>
+ <a href="https://github.com/Neh2l/Trainiac" target="_blank" class="btn code">
+  <svg class="btn-icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+    <path d="M12 0.5C5.4 0.5 0 6 0 12.5C0 17.8 3.4 22.3 8.2 23.8C8.8 23.9 9 23.5 9 23.2V21.1C5.7 21.8 5 19.6 5 19.6C4.5 18.3 3.7 18 3.7 18C2.6 17.3 3.8 17.3 3.8 17.3C5 17.4 5.6 18.6 5.6 18.6C6.7 20.4 8.5 19.9 9.2 19.6C9.3 18.8 9.6 18.3 9.9 18C7.2 17.7 4.4 16.6 4.4 11.9C4.4 10.6 4.9 9.5 5.7 8.6C5.6 8.3 5.2 7 5.8 5.3C5.8 5.3 6.8 5 9 6.6C9.9 6.3 10.9 6.2 12 6.2C13.1 6.2 14.1 6.3 15 6.6C17.2 5 18.2 5.3 18.2 5.3C18.8 7 18.4 8.3 18.3 8.6C19.1 9.5 19.6 10.6 19.6 11.9C19.6 16.6 16.8 17.7 14.1 18C14.5 18.4 14.9 19.2 14.9 20.4V23.2C14.9 23.5 15.1 23.9 15.7 23.8C20.6 22.3 24 17.8 24 12.5C24 6 18.6 0.5 12 0.5Z"/>
+  </svg>
+  Code
+</a>
+
+</div>
+
+    </div>
+
+    <div class="project-card">
+      <img src="imgs/p1 (4).png" alt="Project 4" />
+      <div class="project-info">
+        <h3>Exclusive-my-pro</h3>
+        <p class="date">Oct 2025
+</p>
+        <p class="desc">A full‑stack e‑commerce platform built with React and Node.js, developed collaboratively with my team.  
+It enables product browsing, secure checkout, and user management, showcasing modern web development practices.
+</p>
+      </div>
+     <div class="project-overlay">
+  <a href="https://neh2l.github.io/Exclusive-my-pro/" target="_blank" class="btn demo">
+    <svg class="btn-icon" width="20" height="20" viewBox="0 0 24 24" fill="none">
+      <path d="M16 11C17.7 11 19 9.7 19 8C19 6.3 17.7 5 16 5C14.3 5 13 6.3 13 8C13 9.7 14.3 11 16 11ZM8 11C9.7 11 11 9.7 11 8C11 6.3 9.7 5 8 5C6.3 5 5 6.3 5 8C5 9.7 6.3 11 8 11ZM8 13C5.3 13 2 14.3 2 17V19H14V17C14 14.3 10.7 13 8 13ZM16 13C15.7 13 15.3 13 15 13.1C16.2 14 17 15.4 17 17V19H22V17C22 14.3 18.7 13 16 13Z" fill="#000"/>
+    </svg>
+    Live Demo
+  </a>
+ <a href="https://github.com/Neh2l/Exclusive-my-pro" target="_blank" class="btn code">
+  <svg class="btn-icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+    <path d="M12 0.5C5.4 0.5 0 6 0 12.5C0 17.8 3.4 22.3 8.2 23.8C8.8 23.9 9 23.5 9 23.2V21.1C5.7 21.8 5 19.6 5 19.6C4.5 18.3 3.7 18 3.7 18C2.6 17.3 3.8 17.3 3.8 17.3C5 17.4 5.6 18.6 5.6 18.6C6.7 20.4 8.5 19.9 9.2 19.6C9.3 18.8 9.6 18.3 9.9 18C7.2 17.7 4.4 16.6 4.4 11.9C4.4 10.6 4.9 9.5 5.7 8.6C5.6 8.3 5.2 7 5.8 5.3C5.8 5.3 6.8 5 9 6.6C9.9 6.3 10.9 6.2 12 6.2C13.1 6.2 14.1 6.3 15 6.6C17.2 5 18.2 5.3 18.2 5.3C18.8 7 18.4 8.3 18.3 8.6C19.1 9.5 19.6 10.6 19.6 11.9C19.6 16.6 16.8 17.7 14.1 18C14.5 18.4 14.9 19.2 14.9 20.4V23.2C14.9 23.5 15.1 23.9 15.7 23.8C20.6 22.3 24 17.8 24 12.5C24 6 18.6 0.5 12 0.5Z"/>
+  </svg>
+  Code
+</a>
+
+</div>
+
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="contact-wrapper">
+    <div class="contact-text">
+      <h2 class="contact-title">LET'S WORK TOGETHER</h2>
+      <p class="contact-subtitle">
+        Have a question, feedback, or an idea to share?<br>
+        Feel free to reach out — I’d love to connect
       </p>
+    </div>
 
-      <a href="#" class="btn">
-        &lt;/&gt; View My Work
+    <form class="contact-form">
+      <input type="text" placeholder="NAME" required />
+      <input type="email" placeholder="EMAIL" required />
+      <textarea placeholder="MESSAGE" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>From idea to sketch, from design to life.</p>
+    <p>All rights reserved © Nehal Reda 2026</p>
+  </footer>
+</section>
+
+
+
+
+
+
+  <!-- Social Icons -->
+  <aside class="social">
+    <p>Follow Me On</p>
+ <div class="icons">
+      <a href="#" aria-label="Instagram">
+        <svg width="30" height="30" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+          <path d="M7 2C4.8 2 3 3.8 3 6V18C3 20.2 4.8 22 7 22H17C19.2 22 21 20.2 21 18V6C21 3.8 19.2 2 17 2H7ZM12 7C14.8 7 17 9.2 17 12C17 14.8 14.8 17 12 17C9.2 17 7 14.8 7 12C7 9.2 9.2 7 12 7ZM18 6.5C18.6 6.5 19 6.9 19 7.5C19 8.1 18.6 8.5 18 8.5C17.4 8.5 17 8.1 17 7.5C17 6.9 17.4 6.5 18 6.5Z"/>
+        </svg>
+      </a>
+      <a href="#" aria-label="Behance">
+        <svg width="30" height="30" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+          <path d="M3 6H9C10.7 6 12 7.3 12 9C12 10.1 11.4 11.1 10.5 11.6C11.6 12.1 12.3 13.1 12.3 14.3C12.3 16.1 10.8 17.6 9 17.6H3V6ZM5.5 8V10H8.5C9.1 10 9.5 9.6 9.5 9C9.5 8.4 9.1 8 8.5 8H5.5ZM5.5 12V15H9C9.6 15 10 14.6 10 14C10 13.4 9.6 13 9 13H5.5ZM14 10H21V12H14V10ZM14 14H21C21 16.2 19.2 18 17 18C14.8 18 13 16.2 13 14C13 11.8 14.8 10 17 10C18.2 10 19.3 10.6 20 11.5L18.5 12.5C18.2 12.2 17.6 12 17 12C15.9 12 15 12.9 15 14C15 15.1 15.9 16 17 16C18 16 18.8 15.3 19 14.5H14V14Z"/>
+        </svg>
+      </a>
+      <a href="#" aria-label="Facebook">
+        <svg width="30" height="30" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+          <path d="M22 12C22 6.5 17.5 2 12 2S2 6.5 2 12C2 17 5.7 21.1 10.4 21.9V14.9H7.9V12H10.4V9.8C10.4 7.3 11.9 5.9 14.2 5.9C15.3 5.9 16.4 6.1 16.4 6.1V8.6H15.1C13.8 8.6 13.5 9.4 13.5 10.2V12H16.3L15.9 14.9H13.5V21.9C18.3 21.1 22 17 22 12Z"/>
+        </svg>
       </a>
     </div>
-
-    <div class="hero-image">
-      <img src="imgs/Frame 13.png" alt="Profile Image">
-    </div>
-  </section>
+  </aside>
 
 </body>
 </html>
